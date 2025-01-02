@@ -828,12 +828,13 @@ textarea:focus {
 }
 .header .navbar-brand span {
     display: block;
+    font-family: "Aldrich" !important;
 }
-.header .navbar-brand span:first-child {
+.header .navbar-brand span:nth-child(2) {
     align-self: center;
     font-size: 25px;
-    font-weight: 900;
-    letter-spacing: -1.17px;
+    font-weight: 400;
+    letter-spacing: 0px;
     color: #AE1B13;
 }
 @media (min-width: 768px) {
@@ -841,21 +842,20 @@ textarea:focus {
         width: 156px;
         max-height: 70px;
     }
-    .header .navbar-brand span:first-child {
+    .header .navbar-brand span:nth-child(2) {
         font-size: 32.9px;
     }
 }
-.header .navbar-brand span:nth-child(2) {
+.header .navbar-brand span:nth-child(3) {
     margin-top: -20px;
     align-self: center;
-    font-family: AutumnMoon;
     font-size: 25px;
     font-weight: 400;
-    letter-spacing: -1.17px;
+    letter-spacing: -1.2px;
     color: #000;
 }
 @media (min-width: 768px) {
-    .header .navbar-brand span:nth-child(2) {
+    .header .navbar-brand span:nth-child(3) {
         font-size: 32.9px;
         margin-top: -26px;
     }
@@ -930,6 +930,7 @@ textarea:focus {
     color: #000;
     padding-top: 20px;
     padding-bottom: 20px;
+    font-family: "Chakra Petch" !important;
 }
 @media (min-width: 992px) {
     .header .navbar .nav-item {
@@ -1190,8 +1191,10 @@ textarea:focus {
 }
 .rad-showcase .container h1 span {
     display: block;
-    margin-top: 5px;
+    margin-bottom: 24px;
     font-weight: 300;
+    font-size: 38px;
+    color: #197d8b;
 }
 .rad-showcase .container p.lead {
     width: 100%;
@@ -1273,11 +1276,15 @@ textarea:focus {
     flex-direction: row;
 }
 
+.header .navbar-brand img{
+    width: 60px;
+}
+
 .header .navbar-brand span{
     display: inline;
 }
 
-.header .navbar-brand span:nth-child(2){
+.header .navbar-brand span:nth-child(3){
     font-family: inherit;
     margin-top: 0;
 }
@@ -1349,7 +1356,7 @@ ul.book-category-content {
 }
 .book-content.featured::before {
     content: "\2605"; /* Unicode bullet symbol */
-    color: #478079;  /* Bullet color */
+    color: #8f39d9;  /* Bullet color */
 	/* Optional tweaks */
     font-weight: bold;
     padding-right: 10px;
@@ -1368,7 +1375,7 @@ li.book-content p{
 }
 
 .experience__company{
-    color: #478079;
+    color: #8f39d9;
 }
 
 .experience__location{
@@ -1396,7 +1403,7 @@ body.home div.experience{
 .experience a:hover, 
 .experience a:active{
     display: block;
-    background-color: #488079;
+    background-color: #8f39d9;
 }
 .experience.selected a > .experience__company,
 .experience:hover a > .experience__company,

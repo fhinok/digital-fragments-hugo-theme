@@ -2,10 +2,9 @@
 <section id="showcase" class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down">
   <div class="container">
     <div class="row flex-column-reverse flex-md-row rad-fade-down rad-waiting rad-animate">
-      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-4">
         <h1 class="display-1">
           {{ i18n "showcase_title" }}
-          <br />
           <span>{{ i18n "showcase_subtitle" }}</span>
         </h1>
         <p class="lead">
@@ -23,17 +22,20 @@
 
   {{ $img := resources.Get .Site.Data.homepage.showcase.image.x }}
   {{ $img2x := resources.Get .Site.Data.homepage.showcase.image._2x }}
+  {{ $imgMobile := resources.Get .Site.Data.homepage.showcase.imageMobile.x }}
 
   {{ with $img }}
   {{ with $img2x}}
+  {{ with $imgMobile}}
               
   {{/* ⚠️ If the image is not found, it will not be displayed - this whole block will be skipped */}} 
 
   {{ $imgWebp := $img.Resize (printf "%dx%d webp q75 Lanczos picture" $img.Width $img.Height) }}
   {{ $img2xWebp := $img2x.Resize (printf "%dx%d webp q75 Lanczos picture" $img2x.Width $img2x.Height) }}
+  {{ $imgMobileWebp := $imgMobile.Resize (printf "%dx%d webp q75 Lanczos picture" $imgMobile.Width $imgMobile.Height) }}
 
 
-  <picture>
+  <picture class="d-none d-md-block">
     <source srcset="{{ $imgWebp.RelPermalink }} 1x, {{ $img2xWebp.RelPermalink }} 2x" type="image/webp" />
     <source srcset="{{ $img.RelPermalink }} 1x, {{ $img2x.RelPermalink }} 2x" type="image/webp">
     <img
@@ -47,6 +49,22 @@
       alt='{{ i18n "showcase_image_alt" }}'
     />
   </picture>
+
+  <picture class="d-md-none d-lg-none d-xl-none">
+    <source srcset="{{ $imgMobileWebp.RelPermalink }} 1x" type="image/webp" />
+    <source srcset="{{ $imgMobile.RelPermalink }} 1x" type="image/webp">
+    <img
+      width="{{ $img.Width }}"
+      height="{{ $img.Height }}"
+      class="lozad img-responsive"
+      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+      srcset="{{ $img.RelPermalink }} 1x, {{ $img2x.RelPermalink }} 2x"
+      data-src="{{ $img.RelPermalink }}"
+      data-srcset="{{ $img.RelPermalink }} 1x, {{ $img2x.RelPermalink }} 2x"
+      alt='{{ i18n "showcase_image_alt" }}'
+    />
+  </picture>
+  {{ end }}
   {{ end }}
   {{ end }}
 

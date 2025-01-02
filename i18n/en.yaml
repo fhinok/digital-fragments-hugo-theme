@@ -1,25 +1,23 @@
 ## Meta tags
 - id: "meta_title"
-  translation: "Adritian - a high performance hugo theme by Adrián Moreno"
+  translation: "digital fragments - Samuel Will"
 - id: "meta_description"
-  translation: "This hugo theme (Adritian) is based on Bootstrap and has features that make it suitable for a personal site, a portfolio or other kind of Single Page Applications."
+  translation: "The portfolio site of Samuel Will. A digital fragments enthusiast."
 - id: "meta_keywords"
-  translation: "hugo, theme, bootstrap, adritian, adrian moreno, personal site, portfolio, single page application"
+  translation: "samuel will, digital fragments, fhinok, technology, personal site, portfolio, cv, dev"
 - id: "meta_author"
-  translation: "Adrián Moreno Peña"
-- id: "meta_image"
-  translation: "/img/general/og-image.jpg"
+  translation: "Samuel Will"
 
 ## Header
 - id: "logo_text1"
-  translation: "Adritian"
+  translation: "digital"
 
 - id: "logo_text2"
-  translation: "Demo"
+  translation: "fragments"
 
 ## Footer
 - id: "footer_notice"
-  translation: "© Adritian. Free Hugo theme by Adrián Moreno Peña."
+  translation: "© Samuel Will | Free Hugo theme by Adrián Moreno Peña."
 
 - id: "language"
   translation: "Language"
@@ -36,27 +34,27 @@
 
 ## Homepage head title
 - id: "head_title"
-  translation: "Demo site for Adritian - a high performance hugo theme by Adrián Moreno"
+  translation: "digital fragments - Samuel Will"
 
 - id: "head_description"
-  translation: "This hugo theme (Adritian) is based on Bootstrap and has features that make it suitable for a personal site, a portfolio or other kind of Single Page Applications."
+  translation: "All about digital fragments"
 
 ## Homepage showcase
 - id: "showcase_title"
-  translation: "Welcome the demo"
+  translation: "Hi, I'm Samuel"
 
 - id: "showcase_subtitle"
-  translation: "Let's dive into an example"
+  translation: "Exploring digital fragments"
 
 - id: "showcase_description"
-  translation: "This is a high performance theme for the Hugo static site generator. This sample content can be edited in the locale files (as the theme supports translations). <br>You can download this theme from <a target='_blank' href='https://github.com/zetxek/adritian-free-hugo-theme'>github</a>, and see it live <a target='_blank' href='https://adritian-demo.vercel.app/'>as a demo site</a> or <a target='_blank' href='https://www.adrianmoreno.info'>a real one</a>.<br>You can find this content to edit in the theme.yaml file."
+  translation: "The digital world is full of possibilities and I love discovering its fragments. Whether programming, working as a lighting technician or designing new ideas - I'm always looking for new challenges and ways to expand my knowledge."
 
 - id: "showcase_button"
   translation: "Contact"
 
   ## not visible but used for accessibility
 - id: "showcase_image_alt"
-  translation: "A picture of Cool Name"
+  translation: "Concert with floating cubes"
 
 ## Homepage about
 - id: "about_title"
@@ -64,16 +62,16 @@
 
 - id: "about_content"
   translation:  <p class="lead">
-      Here you can add some information about you. A small excerpt that describes 
-      your experience, for example.   
+      I am Sämi Will, IT manager, developer, lighting technician, Scout and open-source enthusiast.   
       </p>
       <p class="lead">
-      You explain something about your academic/study background, as well as your
-      preferred areas of work. Think of this area as context-setting for the experience
-      that you will describe below. Why did you change jobs? What drove you to take a 
-      new gig? Even if you are not looking for a job, it's a good way to hint about
-      what kind of projects you are interested in.
-    </p>
+      I am currently studying computer science at the FHNW in Brugg and can't wait to put my skills to use in software development.
+      I love developing digital tools and am always looking for the next project that will challenge me.
+      Technology has fascinated me all my life and I am always ready to learn and discover new things.
+      </p>
+      <p class="lead">
+      I have acquired most of my specialist knowledge myself over time. I am self-taught and love to familiarize myself with new technologies.
+      </p>
 
 - id: "about_button"
   translation: "About Me"
@@ -87,13 +85,13 @@
   translation: "Experience"
 
 - id: "experience_description"
-  translation: "This is where you can highlight a bit over your experience. Years of total experience, specialization, etc."
+  translation: "Here you will find an overview of my previous experiences."
 
 - id: "experience_button"
   translation: "LinkedIn" 
 
 - id: "experience_button_url"
-  translation: "https://www.linkedin.com/in/adrianmoreno/"
+  translation: "https://www.linkedin.com/in/sämi-will/"
 
 - id: "experience_button2"
   translation: "Download resume"
@@ -154,19 +152,19 @@
   translation: "Phone Number"
 
 - id: "contact_phone_number"
-  translation: "+555 (11) 123 44 55"
+  translation: ""
 
 - id: "contact_email_title"
   translation: "Email"
 
 - id: "contact_email_email"
-  translation: '<a href="mailto:mail@example.com">mail@example.com</a>'
+  translation: '<a href="mailto:mail@digital-fragments.com">mail@digital-fragments.com</a>'
 
 - id: "contact_address_title"
   translation: "Address"
 
 - id: "contact_address_address"
-  translation: "Exact street/neighborhood (you can omit this)<br />Postcode, City"
+  translation: "Olten, Switzerland"
 
 - id: "contact_button"
   translation: "Send Message"

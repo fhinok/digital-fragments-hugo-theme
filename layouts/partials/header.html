@@ -1,5 +1,5 @@
 <!-- if you want to enable google tag manager you can check in your theme toml -->
-{{ if .Site.Params.analytics.google_tag_manager.enabled }}
+{{ if .Site.Params.google_tag_manager.enabled }}
 <!-- Google Tag Manager (noscript) -->
 <noscript
   ><iframe
@@ -11,11 +11,29 @@
 ></noscript>
 <!-- End Google Tag Manager (noscript) -->
 {{ end }}
+
+{{ if .Site.Params.google_analytics.enabled }}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.google_analytics.code }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '{{ .Site.Params.google_analytics.code }}');
+</script>
+{{ end }}
+
 <header class="header fixed-top rad-animation-group" id="header">
   <div class="container rad-fade-in">
     <nav class="navbar bd-navbar navbar-expand-lg navbar-light p-0">
       <div class="container-fluid">
-        <a class="navbar-brand mx-auto" href="{{ .Site.BaseURL | absURL }}">
+        <a class="navbar-brand mx-auto" href="{{ .Site.BaseURL | relLangURL }}">
+          {{ $logo := resources.Get "images/digital-fragments_logo-small.png" }}
+          {{ with $logo }}
+          {{ $logoWebp := $logo.Resize (printf "%dx%d webp q75 Lanczos picture" 30 30) }}
+          <img src="{{ $logoWebp.RelPermalink }}" width="30" height="30" alt="" />
+          {{ end }}
           <span>{{ i18n "logo_text1" }}</span>
           <span>{{ i18n "logo_text2" }}</span>
         </a>
@@ -33,7 +51,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-lg-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="{{ .Site.BaseURL | absURL }}"
+              <a class="nav-link active" href="{{ .Site.BaseURL | relLangURL }}"
                 >HOME</a
               >
             </li>

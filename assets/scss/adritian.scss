@@ -1,18 +1,50 @@
+@font-face {
+    font-family: 'Chakra Petch';
+    src: url('../fonts/Chakra_Petch/ChakraPetch-Regular.ttf');
+    src: url('../fonts/Chakra_Petch/ChakraPetch-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aldrich';
+    src: url('../fonts/Aldrich/Aldrich-Regular.ttf');
+    src: url('../fonts/Aldrich/Aldrich-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Anta';
+    src: url('../fonts/Anta/Anta-Regular.ttf');
+    src: url('../fonts/Anta/Anta-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Audiowide';
+    src: url('../fonts/Audiowide/Audiowide-Regular.ttf');
+    src: url('../fonts/Audiowide/Audiowide-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @import "./bootstrap/bootstrap.scss";
 @import "navbar";
 @import "menu";
 @import "raditian";
 
 /** main style **/
-.header .navbar-brand span:first-child{
-    color: #478079;
+.header .navbar-brand span:nth-child(2){
+    color: #8f39d9;
 }
 .header .container{
     padding-left: 10px;
 }
 
 html body ::selection{
-    background-color:#488079;color:#fff
+    background-color:#7d30c0;color:#fff
 }
 
 
@@ -61,6 +93,7 @@ h6 {
 h1,
 h2 {
     margin-bottom: 16px;
+    font-family: "Chakra Petch" !important;
 }
 h2 {
     font-size: 32px;
@@ -119,7 +152,7 @@ span a {
 }
 p a:hover,
 span a:hover {
-    color: #478079;
+    color: #b35aff;
     text-decoration: none;
 }
 .lead {
@@ -175,11 +208,11 @@ html[data-bs-theme="light"] {
         color: #fff !important;
         background-color: #181818 !important;
     }
-    .header .navbar-brand span:nth-child(2){
+    .header .navbar-brand span:nth-child(3){
         color: #fff !important;
     }
     .header .navbar .nav-item .nav-link::after{
-        background-color: #fff !important;
+        background-color: #197d8b !important;
     }
     .navbar-light .navbar-toggler-icon{
         background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
@@ -189,7 +222,7 @@ html[data-bs-theme="light"] {
     }
     @media (min-width: 992px) {
         .header .navbar .nav-item:hover .nav-link::after {
-            background-color: #fff !important;
+            background-color: #197d8b !important;
         }
     }
     
@@ -235,7 +268,7 @@ html[data-bs-theme="light"] {
         color: #fff !important;
     }
     .experience__company{
-        color: #6EAFAA !important;
+        color: #b35aff !important;
     }
     .education__degree, .experience__date{
         color: #a6a6a6 !important;

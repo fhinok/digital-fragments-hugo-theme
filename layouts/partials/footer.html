@@ -4,13 +4,15 @@
       <div class="row w-100 align-items-center">
         <div class="footer_left col-12 col-lg-4 mb-3 mb-lg-0 text-center text-lg-start">
           <div class="footer__copy">
-            <span>{{ i18n "footer_notice" | safeHTML }}</span>
+            <span>{{ i18n "footer_notice" | safeHTML }}</span><br />
+            <span>Foto von <a href="https://unsplash.com/de/@fabioha?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">fabio</a> auf <a href="https://unsplash.com/de/fotos/digitale-tapete-mit-geometrischer-form-oyXis2kALVg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            </span>
           </div>
         </div>
         <div class="footer_links col-12 col-lg-6 mb-3 mb-lg-0 text-center text-lg-start">
           <ul class="navbar-nav w-100 align-items-center justify-content-center justify-content-lg-start d-flex flex-wrap gap-2">
             <li class="nav-item">
-              <a class="nav-link px-2" href="{{ .Site.BaseURL | absURL }}"
+              <a class="nav-link px-2" href="{{ .Site.BaseURL | relLangURL }}"
                 >🏠 HOME</a
               >
             </li>

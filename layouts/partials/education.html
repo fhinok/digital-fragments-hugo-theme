@@ -6,6 +6,7 @@
                 <h2>{{ i18n "education_title" }}</h2>
                 <div class="row pt-2 pt-md-4">
                     {{ range .Site.Data.homepage.education.items }}
+                    {{ if eq .lang $.Site.Language.Lang }}
                     <div class="col-12 col-sm-6 mb-4 mb-sm-0">
                         <div class="education">
                             <div class="education__date">{{ .year }}</div>
@@ -15,6 +16,7 @@
                             </div>
                         </div>
                     </div>
+                    {{ end }}
                     {{ end }}
                 </div>
             </div>

@@ -1,9 +1,6 @@
-# Adritian Free Hugo Theme
-###### Adritian Hugo Theme for Personal Websites or Professional minimalistic landing pages
+# Digital Fragments Hugo Theme
 
-See it live at **[adritian-demo.vercel.app](https://adritian-demo.vercel.app/)** (simple demo site, vanilla installation) or **[adrianmoreno.info](https://www.adrianmoreno.info)** (my personal site, running on this theme)
-
-This free Hugo theme is a fork of [Adritian Free Hugo Theme](https://github.com/zetxek/adritian-free-hugo-theme) - a great Hugo theme created by [zetxek](https://github.com/zetexk).
+This Hugo theme is a fork of [Adritian Free Hugo Theme](https://github.com/zetxek/adritian-free-hugo-theme) - a great Hugo theme created by [zetxek](https://github.com/zetexk).
 
 It focuses on accessibility, high performance and usability. It's extendable by adding your own styles or content types, with a solid foundation.
 
